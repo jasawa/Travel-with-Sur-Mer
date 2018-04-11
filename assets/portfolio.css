@@ -1,0 +1,292 @@
+
+
+/** {
+	box-sizing: border-box;
+}*/
+
+
+body {
+	margin: 0 auto;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: 0;
+	background-image: url(assets/images/skulls.png)
+}
+
+
+.nav a.active{
+
+	text-align: center;
+	padding: 27px 20px;
+	float: left;
+	background-color: #1c6a6d;
+	color: white;
+	font-family: Georgia;
+	font-size: 40px;
+	position: relative;
+
+}
+
+
+.nav {
+	 overflow: hidden;
+	 background-color: #f5f7cc;
+	 display: block;
+	 margin-right: 70px;
+	 margin-left: 180px;
+	 padding-right: 95px;
+	 padding-left: 60px;
+    box-shadow: 0 4px 8px 0 rgba(7, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 960px;
+
+
+
+}
+
+.nav a {
+		float: right;
+		color: #1d642b;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		padding: 30px 0px 0px 23px;
+		height: 30px;
+		text-align: center; 
+		display: inline-block;
+}
+
+.nav a:hover {
+	background-color: #ddd;
+	color: white;
+}
+
+#page-wrap{
+	width: 1200px;   
+	margin: 0 auto
+}
+
+#relative {
+	background-color: #f7f7df;
+	height: 150px;
+	position: relative;
+	bottom: 0;
+	padding: 50px 50px;
+	padding-right: 100px;
+	box-shadow: 0 4px 8px 0 rgba(7, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 450px;
+	float: left;
+	height: 500px;
+}
+
+#smallcontent {
+	width: 650px;
+	margin: 0 auto;
+	padding-right: 190px;
+}
+
+#othercontent {
+	background-color: #f7f7df;
+	height: 180px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(7, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	bottom: -3px;
+	right: 165px;
+	width: 200px;
+	float: right;
+}
+
+.text{
+	text-align: left;
+}
+
+#relative h1 {
+	position: relative;
+	text-align: left;
+	float: 0;
+	font-size: 40px;
+	top: -45px;
+	border-bottom: 8px solid #57c4d0;
+}
+
+#othercontent h2 {
+
+	text-align: center;
+	float: 0;
+	font-size: 20px;
+	top: 70px;
+	border-bottom: 5px solid #57c4d0;
+	border-bottom-style:ridge;
+	right: -60px;
+	margin-top: 20px;
+
+}
+
+
+
+img.wrap{
+	float: left;
+	margin-right: 10px;
+	clear: both; 
+}
+
+p {
+	position: relative;
+	bottom: 50px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #3c2d2d;
+	color: white;
+	text-align: center;
+	height: 90px;
+}
+
+.footer_outer{
+	width: 100%;
+border: 5px solid;
+position: fixed;
+color: #2c521b;
+padding: 0px;
+bottom: 88px;
+}
+
+
+
+.centerimage {
+	display: block;
+	margin: 0 auto;
+	width: 80em;
+}
+
+
+ input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.bread {
+	top: -65px;
+    padding: 20px 0px 0px -5px;
+    bottom: 90px;
+   position: relative;
+}
+
+.city{
+	top: -355px;
+    padding: 80px 50px 0px 0px;
+    bottom: 200px;
+    right: -250px;
+   position: relative;
+}
+
+.colors {
+	top: -390px;
+    padding: 20px 0px 0px -5px;
+    bottom: 90px;
+   position: relative;
+
+}
+
+.pastel {
+		top: -677px;
+    padding: 80px 50px 0px 0px;
+    bottom: 300px;
+    right: -250px;
+   position: relative;
+}
+
+.autumn {
+	top: -720px;
+    padding: 20px 0px 0px -5px;
+    bottom: 500px;
+   position: relative;
+}
+
+.text {
+	top: -130px;
+	left: 0px;
+	background-color: #1c6a6d;
+	color: white;
+	font-family: Georgia;
+	font-size: 20px;
+	position: relative;
+	width: 198px;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+
+}
+
+.text2 {
+	top: -420px;
+	left: 250px;
+	background-color: #1c6a6d;
+	color: white;
+	font-family: Georgia;
+	font-size: 20px;
+	position: relative;
+	width: 198px;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+
+.text3 {
+	top: -455px;
+	left: 0px;
+	background-color: #1c6a6d;
+	color: white;
+	font-family: Georgia;
+	font-size: 20px;
+	position: relative;
+	width: 198px;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+
+.text4 {
+	top: -745px;
+	left: 250px;
+	background-color: #1c6a6d;
+	color: white;
+	font-family: Georgia;
+	font-size: 20px;
+	position: relative;
+	width: 198px;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+
+.text5 {
+	top: -780px;
+	left: 0px;
+	background-color: #1c6a6d;
+	color: white;
+	font-family: Georgia;
+	font-size: 20px;
+	position: relative;
+	width: 198px;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	bottom: 200px;
+}
