@@ -1,0 +1,70 @@
+
+
+body {
+	margin: 0 auto;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: 0;
+	background-image: url(assets/images/skulls.png)
+}
+
+img.img-wrap{
+	float: left;
+	margin-right: 10px;
+	clear: both;
+	padding: 1px;
+	border: 1px solid #1d5218;
+	background-color: #cbb;
+
+}
+
+.blue-header span{
+	border-bottom: 6px solid #57c4d0;
+	font-family: 'Merriweather', serif;;
+
+}
+
+h1 {
+	padding:0px 0px 0px 5px;
+	text-align: center;
+}
+
+p {
+	font-family: Arial;
+}
+
+.header span  {
+	border-bottom: 5px dotted #57c4d0;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+}
+
+h2 {
+	text-align: center;
+}
+
+.imageset{
+	display: flex;
+	flex-wrap: flex;
+	padding: 40px 0px 0px 125px;
+}
+
+.navbar-custom  {
+	background-color: lemonchiffon;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding : 20px 0px 0px 15px;
+
+}
+
+
+
+
+
+
+
+
