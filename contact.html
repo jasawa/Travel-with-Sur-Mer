@@ -42,7 +42,9 @@ h1 {
 p {
 	font-family: Arial;
 }
-
+.container {
+  center
+}
 .header span  {
 	text-align: center;
 	border-bottom: 5px dotted #57c4d0;
@@ -65,18 +67,13 @@ h2 {
 }
 
 </style>
-
-
-
-
-
-
-
-<body>
-
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Sur Mer</a>
+  <a class="navbar-brand" href="#">Sur Mer Travel</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -103,79 +100,40 @@ h2 {
     </span>
   </div>
 </nav>
-
-<br>
-
-  
-  <div class="row">
-
-   <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:lemonchiffon">
-      
-      <form>
-  <div class="form-group row">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label">Name</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control" id="colFormLabelSm" placeholder="What is your full name?">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="colFormLabel" placeholder="What is your email?">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label">Address</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control" id="colFormLabelLg" placeholder="What is your Address?">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label">Phone Number</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control" id="colFormLabelSm" placeholder="Please put your phone number here">
-    </div>
-  </div>
-</form>
-    
-</div>
-
-	<div class="col-sm-3 col-md-6 col-lg-4" style="background-color:#f6fccd;">
-
-		<h2 class="header"><span>Extra Space to be used</span></h2>
-
-
-
-
-		<div class="imageset">
-		<a href="http://google.com"><img src="assets/images/if_github_circle_black_107161.png"></a>
-
-		<a href="http://google.com"><img src="assets/images/if_square-linkedin_317725.png"></a>
-
-		<a href="http://google.com"><img src="assets/images/if_twitter_circle_color_107170.png"></a>
-
-	</div>
-
-
-		
-
-   
+ 
+<div class="container">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+                    <h3 style="margin-bottom: 25px; text-align: center;">Send us an E-Mail</h3>
+    				<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+					</div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                    </div>
+            
+        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+        </form>
     </div>
 </div>
-    </div>
-    
-
-</div>
-</div>
-   
-</div>
-    </div>
-    
-  </div>
 </div>
 
 
-    
+
+
+
 
 
 
