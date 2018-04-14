@@ -1,22 +1,42 @@
-// https://developers.zomato.com/api/v2.1/search?entity_id=259&entity_type=city&start=20&count=20
-
-// Find the rating of any resteraunt in any city
-
-
-
 $(document).ready(function() {
 
-    // var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=259&entity_type=city&start=20&count=20";
+    var places = [];
+
+ 
+  
+
+    function makeFavPush() {
+
+       var buttons = $("#myCityButtons button")
+       for(var i = 0; i < buttons.length; i++) {
+        buttons[i].remove();
+       }
+       for (var i = 0; i < places.length; i++) {
+       
+    
+
+          var newB = $("<button>");
+
+      newB.addClass('city-button btn btn-secondary m-2');
+
+      newB.attr("data-id", places[i]);
+ 
+      newB.text(places[i]);
+     
+      $("#myCityButtons").append(newB);
+       }
+    }
 
     $("#cities").empty();
-    $("#nyc").click(function() {
+    
+    function startThePage() {
         event.preventDefault();
 
-        console.log('clicked');
+        //console.log('clicked');
 
         var entity = $(this).attr("data-id");
 
-        console.log(entity);
+        //console.log(entity);
 
          var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=" + entity + "&entity_type=city&start=5&count=5";
 
@@ -33,10 +53,6 @@ $(document).ready(function() {
             .then(function(response) {
                 console.log(response);
                  var results = response.restaurants;
-
-                // console.log(results);
-
-                
 
                  for (var i = 0; i < results.length; i++) {
 
@@ -60,15 +76,42 @@ $(document).ready(function() {
 
                        favDiv.append(rating).append(restaurantName).append(location).append(locality).append(costForTwo);
 
-                        
 
                      $("#cities").prepend(favDiv);
 
                  }
+                });
+            }
+                
+
+
+                 $("#addCity").on("click", function(event) {
+                    event.preventDefault();
+                
+                
+                    var fav = $("#city-input").val().trim();
+                
+                    // The movie from the textbox is then added to our array
+                    places.push(fav);
+                
+                    // Calling renderButtons which handles the processing of our movie array
+                    makeFavPush();
+
+                $(document).on("click", ".city-button", startThePage);
+                    
+                 });
             });
     
-        });
+        
 
-    });
+     
+    
+    
+
+
+
+
+
+    
 
     
