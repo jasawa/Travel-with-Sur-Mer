@@ -2,6 +2,8 @@
 
 // Find the rating of any resteraunt in any city
 
+
+
 $(document).ready(function() {
 
     // var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=259&entity_type=city&start=20&count=20";
@@ -16,7 +18,7 @@ $(document).ready(function() {
 
         console.log(entity);
 
-         var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=" + entity + "&entity_type=city&start=20&count=20";
+         var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=" + entity + "&entity_type=city&start=5&count=5";
 
          $.ajax({
             url: queryURL,
@@ -40,11 +42,25 @@ $(document).ready(function() {
 
                      var favDiv = $("<div>");
 
-                     var rating = $("<p>").text("Rating: " + results[i].restaurant.user_rating.aggregate_rating);
-            
-                        //console.log(rating);
+                     var restaurantName = $("<p>").text("Name: " + results[i].restaurant.name);
 
-                       favDiv.append(rating);
+                     var rating = $("<p>").text("Rating: " + results[i].restaurant.user_rating.aggregate_rating);
+ 
+                     var location = $("<p>").text("Address: " + results[i].restaurant.location.address);
+
+                     var locality = $("<p>").text("Local Area: " + results[i].restaurant.location.locality);
+
+                     var costForTwo = $("<p>").text("Cost for Two: " + results[i].restaurant.average_cost_for_two);
+
+                     var favImage = $("<img>");
+
+                     favImage.attr("src", results[i].restaurant.featured_image);
+
+                        favDiv.append(favImage);
+
+                       favDiv.append(rating).append(restaurantName).append(location).append(locality).append(costForTwo);
+
+                        
 
                      $("#cities").prepend(favDiv);
 
