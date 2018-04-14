@@ -5,9 +5,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  
 
 
-	<title>This is my Bootstrap Profile</title>
+	<title>Sur Mer Travel</title>
 </head>
 
 <!-- CSS -->
@@ -17,7 +18,7 @@ body {
 	margin: 0 auto;	
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	padding: 0;
-	background-image: url(assets/images/skulls.png)
+	background-image: url(assets/images/complexdesign.jpg)
 }
 
 
@@ -29,7 +30,7 @@ body {
 .logo {
 
 	text-indent: -99999999px;
-	background: url('logo/l1.png');
+	background: url('logo/l1.png')no-repeat;
 	width: 600px;
 	height: 99px;
 
@@ -93,10 +94,24 @@ h2 {
 
 	
 }
-.carouselslide{
-	width:200px;
-    height:200px;
+.carousel_slide{
+    height:300px;
+		margin: 20px;
 	
+}
+
+.infoWindow {
+	margin-top: 200px;
+	background-color:lemonchiffon;
+}
+.weatherapi{
+
+ background-color: lightgrey;
+    width: 1490px;
+    border: 15px solid lemonchiffon;
+    padding: 25px;
+    margin: 25px;
+
 }
 
 
@@ -119,8 +134,7 @@ h2 {
 	</div>
 	<div class="col-sm"></div>
 	<div class="col-sm">
-	<p class="information">Phone: 555-555-5555</p>
-	<p class="information">Fax: 555-555-5555</p>
+	<p class="information bounce>"><b>Phone:</b> (800)555-5555</p>
 	</div>
 	</div>	
 </div>
@@ -166,8 +180,11 @@ h2 {
 </div>
 </nav>
 </div>
- 
-<div id="carouselslide" class="carousel slide" class="container-fluid" data-ride="carousel">
+
+
+
+ <!-- Carousel -->
+<div id="carouselslide" class="carousel_slide" class="container-fluid" data-ride="carousel">
 	<div class="carousel-inner" role="listbox">
 	  <div class="carousel-item active">
 		<img class="d-block img-fluid" src="assets/images/h2.png" alt="First slide">
@@ -183,32 +200,54 @@ h2 {
 
 
 <body>
-
+	
+<!-- About Me -->
   <div class="row">
 
-   <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:lemonchiffon">
+   <div class="col-sm-9 col-md-6 col-lg-8 infoWindow">
       
     	<h2 class="blue-header"><span>Sur Mer Travel</span></h2>
     	<img class="img-wrap" src="">
-    	<p>Sur Mer Travel is your one stop shop to all your travel needs. If you're looking to take the family out on that big vacation or just a weekend getaway, your staff is here to help you plan your perfect vacation without hurting our pockets. Give us a call today for a free quote. </p> </div>
+			<p>Sur Mer Travel is your one stop shop to all your travel needs. If you're looking to take the family out on that big vacation or just a weekend getaway, your staff is here to help you plan your perfect vacation without hurting our pockets. Give us a call today for a free quote. </p> 
+		</div>
+	 
 
- </body>
+		<!-- Weather API -->
+<div class="row">
+	<div class="col-sm-9 col-md-6 col-lg-8 weatherapi" id="weatherapi">
+</div>
 
+<div id="weatherapi" class="weather_api" class="container-fluid"></div>
 
-
-
-
-	
-	
-
-
-
+</div>
 
 </body>
+
+
+
+
+
+
+
+
+
+                      
+
+
+	
+	
+
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
 
 
 
