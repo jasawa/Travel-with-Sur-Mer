@@ -6,8 +6,10 @@
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<title>This is my Bootstrap Profile</title>
+
+	<title>Bootstrap Weather Page API</title>
 </head>
 
 
@@ -74,21 +76,26 @@ h2 {
 
 }
 
+#days {
+    width: 200px;
+}
 
+#city {
+    width: 200px;
+}
 
+#display-div {
+		display: block;
+		float: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 
-
-
-
-
-
+#input-div {
+	float: left;
+}
 </style>
-
-
-
-
-
-
 
 <body>
 
@@ -116,90 +123,42 @@ h2 {
         <a class="nav-link" href="index.html">Home</a>
       </li>
     </ul>
-    <span class="navbar-text">
-   			FAQ
-    </span>
+
   </div>
 </nav>
 
+  
+<br> 
+<container id="input-div"> 
+<input type="text" class="form-control" id="city" placeholder="Los Angeles">
+<br>
+<button id="click-button" type="submit"> Submit </button>
+
+</container>
+
+<container id="display-div"> 
+
+<div class="city"></div>
+<div class="date"></div>
+<div class="humidity"></div>
+<div class="temp"></div>
+<div class="wind"></div>
+<div class="weather"></div>
+
 <br>
 
-  
-  <div class="row">
+<div class="date1"></div>
+<div class="humidity1"></div>
+<div class="temp1"></div>
+<div class="wind1"></div>
+<div class="weather1"></div>
 
-  
-	<div class="col-sm-3 col-md-6 col-lg-4" style="background-color:#f6fccd;">
-
-		<h2 class="header"><span>This could be a column for one video.</span></h2>
-
-
-
-
-
-
-	</div>
-
-	<div class="col-sm-3 col-md-6 col-lg-4" style="background-color:#f6fccd;">
-
-		<h2 class="header"><span>This could also be a column for one video.</span></h2>
-
-
-
-
-
-
-	</div>
-
-
-
-
-
-
-
-
-
-	<div class="col-sm-3 col-md-6 col-lg-4" style="background-color:#f6fccd;">
-
-		<h2 class="header"><span>Same thing.</span></h2>
-
-
-
-
-
-		
-
-   
-    </div>
-</div>
-    </div>
-    
-
-</div>
-</div>
-   
-</div>
-    </div>
-    
-  </div>
-</div>
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
+</container>
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="assets/js/weather.js"> </script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
