@@ -2,130 +2,180 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Sur Mer Travel</title>
 
-<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto+Condensed:300" rel="stylesheet">
 
-
-	<title>Bootstrap Weather Page API</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 </head>
 
-
+<!-- CSS -->
 <style>
 
 body {
-	margin: 0 auto;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	padding: 0;
-	background-image: url(assets/images/skulls.png)
-}
-
-img.img-wrap{
-	float: left;
-	margin-right: 10px;
-	clear: both;
-	padding: 1px;
-	border: 1px solid #1d5218;
-	background-color: #cbb;
-
+		margin: 0 auto;	
+		/*font-family: 'Georgia', Times, Times New Roman, serif;*/
+		/*font-family: 'Roboto Condensed', sans-serif;*/
+		font-family: 'Gothic A1', sans-serif;
+		font-weight: bolder;
+		padding: 0;
+		/*background-image: url(assets/images/complexdesign.jpg);*/
+		/*background-image: url(assets/images/water.jpg);*/
+		background-color: #0099cc;
 }
 
 .blue-header span{
-	border-bottom: 6px solid #57c4d0;
-	font-family: 'Merriweather', serif;;
+		border-bottom: 6px solid #57c4d0;
+		font-family: 'Merriweather', serif;;
+}
 
+.logo {
+		text-indent: -99999999px;
+		background: url('logo/l1.png')no-repeat;
+		width: 600px;
+		height: 99px;
 }
 
 h1 {
-	padding:0px 0px 0px 5px;
-	text-align: center;
+		padding:0px 0px 0px 5px;
+}
+
+navigation {
+		width: 100%;
+		border-radius: 50px;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		margin:80px;
 }
 
 p {
-	font-family: Arial;
+  font-family: Arial;
 }
 
 .header span  {
-	border-bottom: 5px dotted #57c4d0;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
+		border-bottom: 5px dotted #57c4d0;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
 }
 
 h2 {
-	text-align: center;
+		text-align: center;
 }
 
 .imageset{
-	display: flex;
-	flex-wrap: flex;
-	padding: 40px 0px 0px 125px;
+		display: flex;
+		flex-wrap: flex;
+		padding: 40px 0px 0px 125px;
 }
 
 .navbar-custom  {
-	background-color: lemonchiffon;
+		background-color:#ccccccbe;
+		padding: 50%
 }
 
-.container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding : 20px 0px 0px 15px;
-
+.information {
+		font-size: 32px;
+		color: black;
+		line-height: 2;
 }
 
-#days {
-    width: 200px;
+#logo-box{
+		margin-top: 0px;
+		margin-bottom: -75px;
+		background-image: url(assets/images/complexdesign.jpg);
 }
 
-#city {
-    width: 200px;
+.carousel_slide{
+		height:300px;
+		margin: 20px;
 }
 
-#display-div {
-		display: block;
-		float: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+.infoWindow {
+		margin-top: 200px;
+		background-color:lemonchiffon;
 }
 
-#input-div {
-	float: left;
+.weatherapi{
+		background-color: lightgrey;
+		width: 1490px;
+		border: 15px solid lemonchiffon;
+		padding: 25px;
+		margin: 25px;
 }
+
+h3 {
+		color: lightgoldenrodyellow;
+		/*font-family: 'Gothic A1', sans-serif;*/
+		font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 </style>
+
 
 <body>
 
+<!-- Heading -->
+<div class="container-fluid pt-5" id="logo-box">
+	<div class="row">
+		<div class="information_box col-sm"> 
+			<h1 class= "logo">Logo Here</h1>
+		</div>
+		<div class="col-sm"></div>
+		<div class="col-sm">
+			<h3 class="information>">Phone:(800)555-5555</h3>
+		</div>
+	</div>	
+</div>
+<br>
+<br>
+<br>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Sur Mer</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="zomato.html">Restaraunts</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="livevideo.html">Live Video</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-    </ul>
 
-  </div>
-</nav>
+
+
+<!-- Nav Bar -->
+<div class="navagation">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html">Sur Mer Travel</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="zomato.html">Trending Restaurants</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="livevideo.html">Weather</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+
+
+
+
+
+
+
 
   
 <br> 
@@ -155,7 +205,6 @@ h2 {
 
 </container>
 
-</body>
 
 <script src="assets/js/weather.js"> </script>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -163,5 +212,5 @@ h2 {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-
+</body>
 </html>
