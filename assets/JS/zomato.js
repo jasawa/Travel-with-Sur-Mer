@@ -68,13 +68,16 @@ $(document).ready(function() {
 
                      var costForTwo = $("<p>").text("Cost for Two: " + results[i].restaurant.average_cost_for_two);
 
+                     var currency = $("<p>").text("Currency: " + results[i].restaurant.currency);
+                    
+
                      var favImage = $("<img>");
 
                      favImage.attr("src", results[i].restaurant.featured_image);
 
                         favDiv.append(favImage);
 
-                       favDiv.append(rating).append(restaurantName).append(location).append(locality).append(costForTwo);
+                       favDiv.append(rating).append(restaurantName).append(location).append(locality).append(costForTwo).append(currency);
 
 
                      $("#cities").prepend(favDiv);
