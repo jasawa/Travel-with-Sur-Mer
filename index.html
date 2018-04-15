@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto+Condensed:300" rel="stylesheet">
 
 <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
@@ -23,7 +24,10 @@ body {
 	margin: 0 auto;	
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	padding: 0;
-	background-image: url(assets/images/complexdesign.jpg)
+	/*background-image: url(assets/images/complexdesign.jpg);*/
+	/*background-image: url(assets/images/water.jpg);*/
+	background-color: #0099cc;
+
 }
 
 
@@ -60,9 +64,6 @@ navigation {
 	
 }
 
-h3 {
-	color: lightgoldenrodyellow;
-}
 
 
 p {
@@ -99,10 +100,10 @@ h2 {
 }
 
 #logo-box{
+	margin-top: 0px;
 	margin-bottom: -75px;
-	font-style: italic;
+	background-image: url(assets/images/complexdesign.jpg);
 
-	
 }
 .carousel_slide{
     height:300px;
@@ -115,14 +116,20 @@ h2 {
 	background-color:lemonchiffon;
 }
 .weatherapi{
-
- background-color: lightgrey;
+ 	background-color: lightgrey;
     width: 1490px;
     border: 15px solid lemonchiffon;
     padding: 25px;
     margin: 25px;
 
 }
+
+h3 {
+	color: lightgoldenrodyellow;
+	/*font-family: 'Gothic A1', sans-serif;*/
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
 
 
 
@@ -131,25 +138,20 @@ h2 {
 
 
 
-
-
-
 <body>
 	
-<br>
-<div class="container-fluid" id="logo-box">
+<div class="container-fluid pt-5" id="logo-box">
 	<div class="row">
-	<div class="information_box col-sm"> 
-	<h1 class= "logo">Logo Here</h1>
-	</div>
-	<div class="col-sm"></div>
-	<div class="col-sm">
-	<h3 class="animated rollIn information>">Phone:(800)555-5555</h3>
-	</div>
+		<div class="information_box col-sm"> 
+			<h1 class= "logo">Logo Here</h1>
+		</div>
+		<div class="col-sm"></div>
+		<div class="col-sm">
+			<h3 class="animated rollIn information>">Phone:(800)555-5555</h3>
+		</div>
 	</div>	
 </div>
- 
-</br>	
+ 	
 <br>
 
 
@@ -167,34 +169,29 @@ h2 {
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="zomato.html">Trending Restaurants</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="livevideo.html">Weather</a>
-	  </li>
-	  <li class="nav-item active">
-			<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-		  </li>
-       
-    </ul>
-    
-  </div>
-</div>
+	<div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="zomato.html">Trending Restaurants</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="livevideo.html">Weather</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+	</div>
 </nav>
 </div>
 
 
 
  <!-- Carousel -->
-<div id="carouselslide" class="carousel_slide" class="container-fluid" data-ride="carousel">
+<div id="carouselslide" class="carousel_slide" data-ride="carousel">
 	<div class="carousel-inner" role="listbox">
 	  <div class="carousel-item active">
 		<img class="d-block img-fluid" src="assets/images/h2.png" alt="First slide">
@@ -206,10 +203,9 @@ h2 {
 		<img class="d-block img-fluid" src="assets/images/d2.png" alt="Third slide">
 	  </div>
 	</div>
-  </div>
+</div>
 
 
-<body>
 	
 <!-- About Me -->
   <div class="row">
@@ -225,27 +221,12 @@ h2 {
 		<!-- Weather API -->
 <div class="row">
 	<div class="col-sm-9 col-md-6 col-lg-8 weatherapi" id="weatherapi">
+	</div>
+
+	<div id="weatherapi" class="weather_api" class="container-fluid"></div>
+
 </div>
 
-<div id="weatherapi" class="weather_api" class="container-fluid"></div>
-
-</div>
-
-</body>
-
-
-
-
-
-
-
-
-
-                      
-
-
-	
-	
 
 
 
@@ -258,7 +239,7 @@ h2 {
 
 
 
-
+</body>
 
 
 </html>
