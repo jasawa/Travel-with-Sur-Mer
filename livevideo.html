@@ -117,100 +117,111 @@ h3 {
 		font-family: 'Roboto Condensed', sans-serif;
 }
 
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding : 20px 0px 0px 15px;
+
+}
+
+#days {
+    width: 200px;
+}
+
+#city {
+    width: 200px;
+}
+
+#display-div {
+		display: block;
+		float: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#input-div {
+	float: left;
+}
 
 </style>
 
 
 <body>
 
-<!-- Heading -->
-<div class="container-fluid pt-5" id="logo-box">
-	<div class="row">
-		<div class="information_box col-sm"> 
-			<h1 class= "logo">Logo Here</h1>
-		</div>
-		<div class="col-sm"></div>
-		<div class="col-sm">
-			<h3 class="information>">Phone:(800)555-5555</h3>
-		</div>
-	</div>	
-</div>
-<br>
-<br>
-<br>
 
-
-
-
-<!-- Nav Bar -->
-<div class="navagation">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html">Sur Mer Travel</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About Us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="zomato.html">Trending Restaurants</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="livevideo.html">Weather</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-				</li>
-			</ul>
-		</div>
+	  <a class="navbar-brand" href="#">Sur Mer</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="zomato.html">Restaraunts</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="livevideo.html">Live Video</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="index.html">Home</a>
+		  </li>
+		</ul>
+	
+	  </div>
 	</nav>
-</div>
-
-<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
-
-
-
-
-
-
-
-
-  
-<br> 
-<container id="input-div"> 
-<input type="text" class="form-control" id="city" placeholder="Los Angeles">
-<br>
-<button id="click-button" type="submit"> Submit </button>
-
-</container>
-
-<container id="display-div"> 
-
-<div class="city"></div>
-<div class="date"></div>
-<div class="humidity"></div>
-<div class="temp"></div>
-<div class="wind"></div>
-<div class="weather"></div>
-
-<br>
-
-<div class="date1"></div>
-<div class="humidity1"></div>
-<div class="temp1"></div>
-<div class="wind1"></div>
-<div class="weather1"></div>
-
-</container>
-
-
-<script src="assets/js/weather.js"> </script>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-</body>
-</html>
+	
+	  
+	<br> 
+	<container id="input-div"> 
+	<input type="text" class="form-control" id="city" placeholder="Enter City">
+	<br>
+	<button id="click-button" type="submit"> Submit </button>
+	
+	</container>
+	
+	<container id="display-div"> 
+	
+	<div class="city"></div>
+	<div class="country"></div>
+	<div class="date"></div>
+	<div class="humidity"></div>
+	<div class="temp"></div>
+	<div class="wind"></div>
+	<div class="weather"></div>
+	
+	<br>
+	
+	
+	
+	<div class="row"></div>
+	
+	<div class="date1"></div>
+	<div class="humidity1"></div>
+	<div class="temp1"></div>
+	<div class="wind1"></div>
+	<div class="weather1"></div>
+	
+	</container>
+	
+	<h1> 
+	
+	</h1>
+	
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="assets/js/weather.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	
+	
+	</html>
