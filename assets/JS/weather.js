@@ -70,6 +70,8 @@ $("#click-button").on("click", function() {
         $("#city").text(localStorage.getItem("cityID"));
         $("#country").text(localStorage.getItem("countryID"));
 
+        
+
         //weatherData.zipcode = localStorage.getItem("addressZip");
         //weatherData.city = localStorage.getItem("addressCity");
         //console.log(weatherData.city);
