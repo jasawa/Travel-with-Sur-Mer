@@ -16,10 +16,13 @@ body {
 }
 
 .logo {
-		text-indent: -99999999px;
-		background: url('logo/l1.png')no-repeat;
-		width: 600px;
-		height: 99px;
+	/*text-indent: -99999999px;*/
+	/*background: url('logo/l1.png')no-repeat;*/
+	border-radius: 30px;
+	background-color: darkslategray;
+	/*width: 600px;*/
+	height: 200px;
+	padding: 30px;
 }
 
 h1 {
@@ -69,7 +72,7 @@ h2 {
 #logo-box{
 		margin-top: 0px;
 		margin-bottom: -75px;
-		background-image: url(assets/images/complexdesign.jpg);
+		background-image: url(images/complexdesign.jpg);
 }
 
 .carousel_slide{
@@ -95,6 +98,15 @@ h3 {
 		/*font-family: 'Gothic A1', sans-serif;*/
 		font-family: 'Roboto Condensed', sans-serif;
 }
+
+#telephone {
+	border-radius: 40px;
+	background-color: olive;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 10px 0px 10px 0px;
+	color: lightgoldenrodyellow;
+}
+
 
 .container {
 	display: flex;
