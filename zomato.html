@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>	
-  </div>
+</div>
   <br>
   <br>
   <br>
@@ -78,36 +78,36 @@
         </div>
       </nav>
   </div>
-  
-
 
 <!--  Zomato Begins Here  -->
 
-<div class="container-fluid">
-  
+<div class="container">
+  <div class="row mt-3 mb-5">
+    <div class="col">
+      <h1 class="text-center blue-header"><span></span>Trending Restaurants in selected cities</span></h1>
+    </div>
+  </div>
   <div class="row">
+      <div class="col"></div>
+      <div class="col mt-4">
+          
+            <form id="city-form">
+                <label for="city-input">Enter City ID Number</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="city-input">
+                <br>
+                <input class="btn btn-secondary mx-2" type="submit" id="addCity" value="submit">
+            </form>
 
-   <div class="col-lg-12">
- 
-      <h1 class="blue-header"><span>Trending Restaurants</span></h1>
-
-       <div class="col-lg-3" align="center">
-              <form id="city-form">
-                  <label for="city-input">Add City</label>
-                  <input type="text" id="city-input">
-                  <br>
-                  <input class="btn btn-secondary mx-2" type="submit" id="addCity" value="submit">
-                  
-              </form>
-          </div>
-
-      <div class="container">
+      </div>
+      <!--<div class="col"></div>-->
+      <div class="col">
+      <!--<div class="container">-->
           <h2>City ID</h2>
           <table class="table table-bordered">
             <thead>
               <tr>
                 <th>City Name</th>
-                <th>ID</th>
+                <th>ID #</th>
               </tr>
             </thead>
             <tbody>
@@ -126,25 +126,18 @@
               <tr>
                   <td>Milan</td>
                   <td>258</td>
-                </tr>
-                <tr>
-                    <td>Atlanta</td>
-                    <td>288</td>
-                  </tr>
+              </tr>
+              <tr>
+                  <td>Atlanta</td>
+                  <td>288</td>
+              </tr>
             </tbody>
           </table>
         </div>
-        
-      <div class="col-lg-3" style="background-color:lemonchiffon">
+    <div class="col"></div>
+    <div class="row">
       
-
-         
-
-
-
-      </div>
-      
-        <div id="myCityButtons">
+        <!--<div id="myCityButtons"></div>
     
             <div class="container">
         
@@ -152,21 +145,15 @@
 
               <div class="col-6">
                   <div id="cities" class="row"></div>
-              </div>
-      
-	
-    
-
-
-      
-			
-	</div>
+              </div>-->	
+        <div class="col">          
+                <div class="mt-5 ml-5" id="cities"></div>
+        </div>
+        
+	  </div>
 
 <br>
 <br>
-
-
-
 
 </div>
 
