@@ -12,7 +12,11 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 
-	<script src="assets/JS/zomato.js"></script> 
+
+
+  <script src="assets/JS/zomato.js"></script> 
+  
+
 	
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -79,14 +83,24 @@
 
 <!--  Zomato Begins Here  -->
 
-
+<div class="container-fluid">
   
   <div class="row">
 
-   <div class="col-sm-9 col-md-6 col-lg-12" style="background-color:lemonchiffon">
+   <div class="col-lg-12" style="background-color:lemonchiffon">
  
-      <h1 class="blue-header"><span>Zomato API</span></h1>
-      
+      <h1 class="blue-header"><span>Trending Restaraunts</span></h1>
+
+       <div class="col-lg-3" align="center">
+              <form id="city-form">
+                  <label for="city-input">Add City</label>
+                  <input type="text" id="city-input">
+                  <br>
+                  <input class="btn btn-secondary mx-2" type="submit" id="addCity" value="submit">
+                  
+              </form>
+          </div>
+
       <div class="container">
           <h2>City ID</h2>
           <table class="table table-bordered">
@@ -121,17 +135,28 @@
           </table>
         </div>
         
-			
+      <div class="col-lg-3" style="background-color:lemonchiffon">
+      
 
-	
-    <div id="myCityButtons">
+         
+
+
+
+      </div>
+      
+        <div id="myCityButtons">
     
-      <div class="container">
-  
-      <div class="row">
-        <div class="col-6">
-            <div id="cities" class="row"></div>
-        </div>
+            <div class="container">
+        
+            <div class="row">
+
+              <div class="col-6">
+                  <div id="cities" class="row"></div>
+              </div>
+      
+	
+    
+
 
       
 			
@@ -141,32 +166,12 @@
 <br>
 
 
-      <div class="col-6">
-        <form id="city-form">
-            <label for="city-input">Add City</label>
-            <input type="text" id="city-input">
-            <br>
-            <input class="btn btn-secondary mx-2" type="submit" id="addCity" value="submit">
-            
-        </form>
-    </div>
-		
+
+
 </div>
 
-    	 </div>
+     
 
-
-
-		
-
-   
-    </div>
-</div>
-    </div>
-    
-
-</div>
-</div>
    
 
 
