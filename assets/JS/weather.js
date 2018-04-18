@@ -7,14 +7,16 @@ var queryURL;
 
 function clear() {
     $("#display-div").empty();
-    }
-    $("#clear-button").on("click", function(event) {
+}
 
-    event.preventDefault();
 
-    clear();
-    
-    });
+$("#clear-button").on("click", function(event) {
+
+event.preventDefault();
+
+clear();
+
+});
 
 $(document).ready(function() {
   if(localStorage.query !== 'undefined') {
@@ -66,7 +68,15 @@ $(document).ready(function() {
          var weatherRow = $("<div class='row'>");
 
          for(i = 0; i < 5; i++){
-             var weatherDisplay = $("<div>");
+
+             var weatherDisplay = $("<h1>");
+            //af//weatherDisplay.text(forecast[i].date.weekday_short);
+            //af//weatherDisplay.addClass()
+
+            //af//var weatherImage = $('<img>');
+            //af//weatherImage.attr('src', forecast[i].icon_url);
+            
+             
              weatherDisplay.html("<h1>" + forecast[i].date.weekday_short + "</h1><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.current_observation.display_location.full + "<p>Date: " + "<br>" + forecast[i].date.pretty + "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit)+"</span>";
              weatherRow.append(weatherDisplay);
 
