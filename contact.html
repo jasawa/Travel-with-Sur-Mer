@@ -35,11 +35,15 @@ body {
 }
 
 .logo {
-    text-indent: -99999999px;
-    background: url('logo/l1.png')no-repeat;
-    width: 600px;
-    height: 99px;
+	/*text-indent: -99999999px;*/
+	/*background: url('logo/l1.png')no-repeat;*/
+	border-radius: 30px;
+	background-color: darkslategray;
+	/*width: 600px;*/
+	height: 200px;
+	padding: 30px;
 }
+
 
 h1 {
     padding:0px 0px 0px 5px;
@@ -115,6 +119,14 @@ h3 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+#telephone {
+	border-radius: 40px;
+	background-color: olive;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 10px 0px 10px 0px;
+	color: lightgoldenrodyellow;
+}
+
 #paperairplane {
     height: 300px;
     margin-top: 81px;
@@ -130,21 +142,24 @@ h3 {
 
 <!-- Heading -->
 <div class="container-fluid pt-5" id="logo-box">
-  <div class="row">
-    <div class="information_box col-sm"> 
-      <h1 class= "logo">Logo Here</h1>
+        <div class="row">
+            <div class="information_box col-sm"> 
+                <!--<h1 class= "logo">Logo Here</h1> -->
+                <img src="assets/images/l1.png" class="logo">
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div>
+                    <div id="telephone">
+                        <h4 class="text-center"><span>Phone:(352)978-0161</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>	
     </div>
-    <div class="col-sm"></div>
-    <div class="col-sm">
-      <h3 class="information>">Phone:(800)555-5555</h3>
-    </div>
-  </div>	
-</div>
-<br>
-<br>
-<br>
-
-
+    <br>
+    <br>
+    <br>
 
 
 <!-- Nav Bar -->
