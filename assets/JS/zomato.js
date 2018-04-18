@@ -14,7 +14,7 @@ $(document).ready(function() {
                 
                     var fav = $("#city-input").val().trim();
                 
-                    var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=" + fav + "&entity_type=city&start=5&count=5";
+                    var queryURL =  "https://developers.zomato.com/api/v2.1/search?entity_id=" + fav + "&entity_type=city&start=7&count=7";
 
          $.ajax({
             url: queryURL,
@@ -50,6 +50,7 @@ $(document).ready(function() {
 
                      var favImage = $("<img>");
 
+                
                      favImage.css({'width': '290px' , 'height': '210px'});
 
                      favImage.attr("src", results[i].restaurant.featured_image);
@@ -57,11 +58,16 @@ $(document).ready(function() {
                         favDiv.append(favImage);
 
                        favDiv.append(rating).append(restaurantName).append(location).append(locality).append(costForTwo).append(currency);
-
+                 
 
                      $("#cities").prepend(favDiv);
 
+                     $('img').on('error', function () {
+                        $(this).hide();
+                      });
+
                  }
+                      
                 });
                     
                  });
