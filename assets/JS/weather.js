@@ -7,14 +7,16 @@ var queryURL;
 
 function clear() {
     $("#display-div").empty();
-    }
-    $("#clear-button").on("click", function(event) {
+}
 
-    event.preventDefault();
 
-    clear();
-    
-    });
+$("#clear-button").on("click", function(event) {
+
+event.preventDefault();
+
+clear();
+
+});
 
 $(document).ready(function() {
   if(localStorage.query !== 'undefined') {
@@ -53,10 +55,15 @@ $(document).ready(function() {
      .then(function(response) {
          console.log(query);
          console.log(response);
+
+         //var url = response.location.wuiurl; 
+
+         //url.attr('src', url);
         
          $(".city").html("<h1>" + response.location.city + " Weather Details</h1>");
          $(".country").text("Country: " + response.location.country);
-         $(".weather").text("Current Weather Details: " + response.location.wuiurl);
+         $(".weather").text("Current Weather Details: " + response.location.wuiurl).attr("href", response.location.wuiurl);
+
          //$(".weather").attr("src", response.location.wuiurl).text("Current Weather Details: " + response.location.wuiurl);
 
 
@@ -66,7 +73,16 @@ $(document).ready(function() {
          var weatherRow = $("<div class='row'>");
 
          for(i = 0; i < 5; i++){
+
              var weatherDisplay = $("<div>");
+            //af//var weatherDisplay = $("<h1>");
+            //af//weatherDisplay.text(forecast[i].date.weekday_short);
+            //af//weatherDisplay.addClass()
+
+            //af//var weatherImage = $('<img>');
+            //af//weatherImage.attr('src', forecast[i].icon_url);
+            
+             
              weatherDisplay.html("<h1>" + forecast[i].date.weekday_short + "</h1><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.current_observation.display_location.full + "<p>Date: " + "<br>" + forecast[i].date.pretty + "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit)+"</span>";
              weatherRow.append(weatherDisplay);
 
