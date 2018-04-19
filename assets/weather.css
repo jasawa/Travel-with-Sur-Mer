@@ -127,7 +127,9 @@ h3 {
 
 #display-div {
 	display: block;
-	float: right;
+	position: relative;
+	left: 400px;
+	float: center;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -135,4 +137,9 @@ h3 {
 
 #input-div {
 	float: left;
+}
+
+#detail-div {
+	float: center;
+
 }
