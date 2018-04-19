@@ -5,7 +5,7 @@ var APIkey;
 var queryURL;
 
 function clear() {
-    $("#display-div").empty();
+    $("#display-div").empty(); 
 }
 
 $("#clear-button").on("click", function(event) {
