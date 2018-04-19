@@ -24,6 +24,7 @@ $(document).ready(function() {
   }
 
 
+
   $("#click-button").on("click", function() {
     cityID = $("#city").val().trim();
     countryID = $("#country").val().trim();
@@ -55,36 +56,47 @@ $(document).ready(function() {
      .then(function(response) {
          console.log(query);
          console.log(response);
-
-         //var url = response.location.wuiurl; 
-
-         //url.attr('src', url);
         
          $(".city").html("<h1>" + response.location.city + " Weather Details</h1>");
-         $(".country").text("Country: " + response.location.country);
-         $(".weather").text("Current Weather Details: " + response.location.wuiurl).attr("href", response.location.wuiurl);
+         //$(".country").text("Country: " + response.location.country);
+         //$(".weather").text("Current Weather Details: " + response.location.wuiurl).attr("href", response.location.wuiurl);
 
          //$(".weather").attr("src", response.location.wuiurl).text("Current Weather Details: " + response.location.wuiurl);
 
-
-
          var forecast = response.forecast.simpleforecast.forecastday;
+
+
+        //  var dateTime = response.forecast.simpleforecast.forecastday.date.pretty;
+        //  var dateTime = moment();
+        //  console.log("CURRENT TIME: " + moment(dateTime).format("hh:mm"));
 
          var weatherRow = $("<div class='row'>");
 
          for(i = 0; i < 5; i++){
 
-             var weatherDisplay = $("<div>");
-            //af//var weatherDisplay = $("<h1>");
-            //af//weatherDisplay.text(forecast[i].date.weekday_short);
+
+        //var animalImage = $("<img>");
+        //animalImage.attr("src", results[i].images.fixed_height.url);
+
+            var weatherDisplay = $("<div>");
+            //var weatherDisplay = $("<h1>");
+            //weatherDisplay.text(forecast[i].date.weekday_short);
+            //var weatherIcon = $("<img>");
+            //weatherIcon.attr("src", forecast[i].icon_url);
+            //var weatherLocation = $("<h3>");
+            //weatherLocation.text(response.current_observation.display_location.full);
+          
             //af//weatherDisplay.addClass()
 
             //af//var weatherImage = $('<img>');
             //af//weatherImage.attr('src', forecast[i].icon_url);
+
             
              
              weatherDisplay.html("<h1>" + forecast[i].date.weekday_short + "</h1><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.current_observation.display_location.full + "<p>Date: " + "<br>" + forecast[i].date.pretty + "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit)+"</span>";
              weatherRow.append(weatherDisplay);
+             //weatherRow.append(weatherIcon);
+             //weatherRow.append(weatherLocation);
 
          }
 
