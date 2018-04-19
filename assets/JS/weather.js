@@ -1,26 +1,25 @@
-//Weather Undergroun API : f6b871c148f6c510
-//Open Weather Map API : f11f4afd34871da9528775f1a3c40f4f
+
 var cityID;
 var countryID;
 var APIkey;
 var queryURL;
 
 function clear() {
-    $("#display-div").empty();
-    }
-    $("#clear-button").on("click", function(event) {
+    $("#display-div").empty(); 
+}
 
-    event.preventDefault();
+$("#clear-button").on("click", function(event) {
 
-    clear();
-    
-    });
+event.preventDefault();
+
+clear();
+
+});
 
 $(document).ready(function() {
   if(localStorage.query !== 'undefined') {
     getWeatherUpdates(localStorage.query);
   }
-
 
   $("#click-button").on("click", function() {
     cityID = $("#city").val().trim();
@@ -37,11 +36,6 @@ $(document).ready(function() {
 
       getWeatherUpdates(queryURL);
 
-          //weatherData.zipcode = localStorage.getItem("addressZip");
-          //weatherData.city = localStorage.getItem("addressCity");
-          //console.log(weatherData.city);
-          //console.log(weatherData.zipcode);
-
    });
    function getWeatherUpdates(query) {
 
@@ -55,35 +49,35 @@ $(document).ready(function() {
          console.log(response);
         
          $(".city").html("<h1>" + response.location.city + " Weather Details</h1>");
-         $(".country").text("Country: " + response.location.country);
-         $(".weather").text("Current Weather Details: " + response.location.wuiurl);
-         //$(".weather").attr("src", response.location.wuiurl).text("Current Weather Details: " + response.location.wuiurl);
-
-
-
+        //  $(".country").text("Country: " + response.location.country);
+        //  $(".weather").text("Current Weather Details: " + response.location.wuiurl).attr("href", response.location.wuiurl);
          var forecast = response.forecast.simpleforecast.forecastday;
+
 
          var weatherRow = $("<div class='row'>");
 
          for(i = 0; i < 5; i++){
-             var weatherDisplay = $("<div>");
-             weatherDisplay.html("<h1>" + forecast[i].date.weekday_short + "</h1><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.current_observation.display_location.full + "<p>Date: " + "<br>" + forecast[i].date.pretty + "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit)+"</span>";
+
+            var weatherDisplay = $("<div>");
+
+            
+        //  var dateTime = response.forecast.simpleforecast.forecastday.date.pretty;
+        //  var dateTime = moment();
+        //  console.log("CURRENT TIME: " + moment(dateTime).format("hh:mm"));
+             weatherDisplay.html("<h1>" + forecast[i].date.weekday_short + "</h1><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.location.country_name + 
+             "<p>Date: " + "<br>" + forecast[i].date.month + "/" + forecast[i].date.day + "/" + forecast[i].date.year + 
+             "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit)+"</span>";
              weatherRow.append(weatherDisplay);
 
          }
 
          $("#display-div").append(weatherRow);
 
-
-         //save to local storage (persistence)
          localStorage.clear();
          localStorage.setItem("query", query);
 
      });
    }
-
-   //$("#clear-all").on("click", clear);
-
           //if(weatherData.zipcode === "" && weatherData.city === ""){
               //console.log("zip code or city was not provided");
               
