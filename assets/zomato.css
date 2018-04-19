@@ -30,8 +30,8 @@ img.img-wrap{
 
 .blue-header span{
 	border-bottom: 6px solid #57c4d0;
-	font-family: 'Merriweather', serif;;
-
+	/*font-family: 'Merriweather', serif;*/
+	font-family: 'Gothic A1', sans-serif;
 }
 
 .logo {
@@ -127,14 +127,14 @@ h3 {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-.container {
+/*.container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding : 20px 0px 0px 15px;
 
-}
+}*/
 
 #telephone {
 	border-radius: 40px;
@@ -143,6 +143,9 @@ h3 {
 	padding: 10px 0px 10px 0px;
 	color: lightgoldenrodyellow;
 }
+
+
+
 
 
 
