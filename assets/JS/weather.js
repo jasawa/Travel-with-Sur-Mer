@@ -48,7 +48,7 @@ $(document).ready(function() {
          console.log(query);
          console.log(response);
         
-         $(".city").html("<h1>" + response.location.city + " Weather Details</h1>");
+         $(".city").html("<h1 class='text-center'>" + response.location.city + " Weather Details</h1>");
         //  $(".country").text("Country: " + response.location.country);
         //  $(".weather").text("Current Weather Details: " + response.location.wuiurl).attr("href", response.location.wuiurl);
          var forecast = response.forecast.simpleforecast.forecastday;
@@ -58,15 +58,14 @@ $(document).ready(function() {
 
          for(i = 0; i < 5; i++){
 
-            var weatherDisplay = $("<div>");
-
+            var weatherDisplay = $("<div class='col-sm'>");
             
         //  var dateTime = response.forecast.simpleforecast.forecastday.date.pretty;
         //  var dateTime = moment();
         //  console.log("CURRENT TIME: " + moment(dateTime).format("hh:mm"));
-             weatherDisplay.html("<h1>" + forecast[i].date.weekday_short + "</h1><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.location.country_name + 
+             weatherDisplay.html("<h3>" + forecast[i].date.weekday_short + "</h3><br><img src='" + forecast[i].icon_url + "'><br><p>Location: " + "<br>" + response.location.country_name + 
              "<p>Date: " + "<br>" + forecast[i].date.month + "/" + forecast[i].date.day + "/" + forecast[i].date.year + 
-             "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit)+"</span>";
+             "<p>Conditions: "+ "<br>" + forecast[i].conditions + "     " + "<br>" + "<br><span id='highTemp'>"+forecast[i].high.fahrenheit+"</span> | <span id='lowTemp'>"+forecast[i].low.fahrenheit+"</span>");
              weatherRow.append(weatherDisplay);
 
          }

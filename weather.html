@@ -21,21 +21,21 @@
 
 <!-- Heading -->
 <div class="container-fluid pt-5" id="logo-box">
-		<div class="row">
-			<div class="information_box col-sm"> 
-				<!--<h1 class= "logo">Logo Here</h1> -->
-				<img src="assets/images/l1.png" class="logo">
-			</div>
-			<div class="col-sm"></div>
-			<div class="col-sm">
-				<div>
-					<div id="telephone">
-						<h4 class="text-center"><span>Phone:(352)978-0161</span></h4>
-					</div>
+	<div class="row">
+		<div class="information_box col-sm"> 
+			<!--<h1 class= "logo">Logo Here</h1> -->
+			<img src="assets/images/l1.png" class="logo">
+		</div>
+		<div class="col-sm"></div>
+		<div class="col-sm">
+			<div>
+				<div id="telephone">
+					<h4 class="text-center"><span>Phone:(352)978-0161</span></h4>
 				</div>
 			</div>
-		</div>	
-	</div>
+		</div>
+	</div>	
+</div>
 	<br>
 	<br>
 	<br>
@@ -70,37 +70,44 @@
 
 <!--  Weather Information begins here  -->
 
-	<container id="input-div"> 
-	<input type="text" class="form-control" id="city" placeholder="Enter City">
-	<input type="text" class="form-control" id="country" placeholder="Enter State or Country">
-	<br>
-	<button id="click-button" type="submit"> Submit </button>
-	<button id="clear-button" type="submit"> Clear </button>
-	
-	</container>
-	<br>
-	<br>
-	<br>
-	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			<h1 class="pr-5 text-center blue-header"><span></span>Check Weather Forecasts</span></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col pr-5 pl-5 pb-5" id="input-div">
+				<input type="text" class="form-control" id="city" placeholder="Enter City">
+				<input type="text" class="form-control" id="country" placeholder="Enter State or Country">
+				<br>
+				<button id="click-button" type="submit"> Submit </button>
+				<button id="clear-button" type="submit"> Clear </button>
+			</div>
+			<div class="col"></div>
+		</div>	
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col pr-5 mr-5 pb-5" id="detail-div">
+					<div class="city"></div>
+					<div class="country"></div>
+					<a class="weather"></a>
+			</div>
+			<div class="col-1"></div>		
+		</div>
 
-	<container align="center" id="detail-div">
-			<div class="city"></div>
-			<div class="country"></div>
-			<a class="weather"></a>
+		<div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col">
+				<div class="pb-5" id="display-div"></div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>			
 
-	</container>
-
-	<br> 
-	
-	<container id="display-div"> 
-
-	
-	</container>
-	
-	<h1> 
-	
-	</h1>
-
+	</div>
 
 	</body>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
