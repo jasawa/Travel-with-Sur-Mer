@@ -23,6 +23,7 @@ body {
 	/*width: 600px;*/
 	height: 200px;
 	padding: 30px;
+	width: 100%;
 }
 
 h1 {
@@ -71,7 +72,7 @@ h2 {
 
 #logo-box{
 		margin-top: 0px;
-		margin-bottom: -75px;
+		margin-bottom: 0px;
 		background-image: url(images/complexdesign.jpg);
 }
 
@@ -101,10 +102,10 @@ h3 {
 }
 
 #telephone {
-	border-radius: 40px;
-	background-color: olive;
+	border-radius: 15px;
+	background-color: #0099cc;
 	font-family: 'Roboto Condensed', sans-serif;
-	padding: 10px 0px 10px 0px;
+	padding: 12px 0px 5px 0px;
 	color: lightgoldenrodyellow;
 }
 

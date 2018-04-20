@@ -46,6 +46,7 @@ body {
 	/*width: 600px;*/
 	height: 200px;
 	padding: 30px;
+	width: 100%;
 }
 
 h1 {
@@ -94,7 +95,7 @@ h2 {
 
 #logo-box{
 	margin-top: 0px;
-	margin-bottom: -75px;
+	margin-bottom: 0px;
 	background-image: url(assets/images/complexdesign.jpg);
 	/*background-image: url(assets/images/water.jpg);*/
 }
@@ -124,17 +125,24 @@ h3 {
 }
 
 #telephone {
-	border-radius: 25px;
-	background-color: olive;
+	border-radius: 15px;
+	background-color: #0099cc;
 	font-family: 'Roboto Condensed', sans-serif;
-	padding: 10px 0px 10px 0px;
+	padding: 12px 0px 5px 0px;
 	color: lightgoldenrodyellow;
 }
+
 #textbox {
   margin: 30px;
   background-color: rgb(250, 249, 249);
   border-radius: 25px;
-  padding: 20px; 
+  padding: 20px;
+  box-shadow: 2px 2px 2px #666; 
+}
+
+.magicSuitcase {
+	text-align: center;
+	margin-top: 30px;
 }
 
 
@@ -146,7 +154,8 @@ h3 {
 <body>
 
 <!-- Heading -->
-<div class="container-fluid pt-5" id="logo-box">
+<br>
+<div class="container-fluid pt-3 pb-3" id="logo-box">
 	<div class="row">
 		<div class="information_box col-sm"> 
 			<!--<h1 class= "logo">Logo Here</h1> -->
@@ -156,15 +165,15 @@ h3 {
 		<div class="col-sm">
 			<div class="animated slideInDown">
 				<div id="telephone">
-					<h4 class="text-center"><span>Phone:(352)978-0161</span></h4>
+					<h4 class="text-center"><span>Phone: (352)978-0161</span></h4>
 				</div>
 			</div>
 		</div>
 	</div>	
 </div>
 <br>
-<br>
-<br>
+
+
 
 
 
@@ -220,7 +229,7 @@ h3 {
 <!-- Pitch about the services offered -->
 <div class="container"> 
 		<div class="row">
-			<div class="col-7" id="textbox">
+			<div class="col-md-6" id="textbox">
 				
 					<h2 class="blue-header"><span>Sur Mer Travel</span></h2>
 					<img class="img-wrap" src="">
@@ -237,8 +246,8 @@ h3 {
 
 							Don’t wait another day to book your dream vacation. We’ll help you have an incredible vacation, creating lasting memories, at a price you can afford. </p> 
 			</div>
-			<div class="col">
-				<img src="assets/images/mp1.jpg" alt="mainpagepicture" class="mt-5" id="mainpagepicture">
+			<div class="col-md-3 col-sm-12">
+				<img src="assets/images/mp1.jpg" alt="mainpagepicture" class="magicSuitcase" id="mainpagepicture">
 			</div>
 
 		</div>	

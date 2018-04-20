@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/footer.css">
     <title>Sur Mer Travel</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto+Condensed:300" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/footer.css">
+
 </head>
+
 
 <!-- CSS -->
 <style>
@@ -42,7 +44,8 @@ body {
 	background-color: darkslategray;
 	/*width: 600px;*/
 	height: 200px;
-	padding: 30px;
+    padding: 30px;
+    width: 100%;
 }
 
 
@@ -92,7 +95,7 @@ h2 {
 
 #logo-box{
     margin-top: 0px;
-    margin-bottom: -75px;
+    margin-bottom: 0px;
     background-image: url(assets/images/complexdesign.jpg);
 }
 
@@ -121,19 +124,25 @@ h3 {
 }
 
 #telephone {
-	border-radius: 40px;
-	background-color: olive;
+	border-radius: 15px;
+	background-color: #0099cc;
 	font-family: 'Roboto Condensed', sans-serif;
-	padding: 10px 0px 10px 0px;
+	padding: 12px 0px 5px 0px;
 	color: lightgoldenrodyellow;
 }
 
-#paperairplane {
+#paperAirplane {
     height: 300px;
-    margin-top: 81px;
+    /*margin-top: 81px;
     margin-left: 20px;
-    margin-right: 250px;
+    margin-right: 250px;*/
     border-radius: 5px;
+}
+
+.emailForm {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
 
 
@@ -143,25 +152,26 @@ h3 {
 <body>
 
 <!-- Heading -->
-<div class="container-fluid pt-5" id="logo-box">
-        <div class="row">
-            <div class="information_box col-sm"> 
-                <!--<h1 class= "logo">Logo Here</h1> -->
-                <img src="assets/images/l1.png" class="logo">
-            </div>
-            <div class="col-sm"></div>
-            <div class="col-sm">
-                <div>
-                    <div id="telephone">
-                        <h4 class="text-center"><span>Phone:(352)978-0161</span></h4>
-                    </div>
+<br>
+<div class="container-fluid pt-3 pb-3" id="logo-box">
+    <div class="row">
+        <div class="information_box col-sm"> 
+            <!--<h1 class= "logo">Logo Here</h1> -->
+            <img src="assets/images/l1.png" class="logo">
+        </div>
+        <div class="col-sm"></div>
+        <div class="col-sm">
+            <div>
+                <div id="telephone">
+                    <h4 class="text-center"><span>Phone: (352)978-0161</span></h4>
                 </div>
             </div>
-        </div>	
-    </div>
-    <br>
-    <br>
-    <br>
+        </div>
+    </div>	
+</div>
+<br>
+
+
 
 
 <!-- Nav Bar -->
@@ -193,39 +203,25 @@ h3 {
 
 <!-- Contact Form -->
 
-<div class="container">
+<div class="emailForm">            
+    <iframe height="602"
+    allowTransparency="true"
+    frameborder="0"
+    scrolling="no"
+    style="width:45%;border:none;display:float-left;"
+    src="https://surmertravel.wufoo.com/embed/m19zj35g1xwehw5/">
+    <a href="https://surmertravel.wufoo.com/forms/m19zj35g1xwehw5/">
+    Fill out my Wufoo form!
+    </a>
+    </iframe>
+    <div id="wuf-adv" style="font-family:inherit; font-size:small; color:#a7a7a7;text-align:center;display:float-left;"></div>
+    <span class="notranslate">
 
-            
-        </form>
-    </div>
-</div>
-<div class="float-right">
-    <img src="assets/images/paperairplane.png" alt="Paper Airplane" id="paperairplane">
-</div>
-</div>
-</div>
-<iframe height="602"
-allowTransparency="true"
-frameborder="0"
-scrolling="no"
-style="width:45%;border:none; float-left"
-src="https://surmertravel.wufoo.com/embed/m19zj35g1xwehw5/">
-<a href="https://surmertravel.wufoo.com/forms/m19zj35g1xwehw5/">
-Fill out my Wufoo form!
-</a>
-</iframe>
-                  <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:float-left;">
-<span class="notranslate">
+    </span>
 
-</span>
+    <!--<img src="assets/images/paperairplane.png" alt="Paper Airplane" id="paperAirplane">-->
 </div>
               
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <footer class="footer-basic-centered">
 
@@ -239,13 +235,20 @@ Fill out my Wufoo form!
 		<a href="zomato.html">Restaurants</a>
 		·
 		<a href="contact.html">Contact</a>
-		·
+		
 		
 	</p>
 
 	<p class="footer-company-name">Sur Mer Travel &copy; 2018</p>
 
 </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
