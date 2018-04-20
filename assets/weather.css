@@ -94,9 +94,10 @@ h2 {
 }
 
 h3 {
-		color: lightgoldenrodyellow;
+		color: black;
 		/*font-family: 'Gothic A1', sans-serif;*/
-		font-family: 'Roboto Condensed', sans-serif;
+		/*font-family: 'Roboto Condensed', sans-serif;*/
+		font-family: 'Gothic A1', sans-serif;
 }
 
 #telephone {
@@ -108,14 +109,14 @@ h3 {
 }
 
 
-.container {
+/*.container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding : 20px 0px 0px 15px;
 
-}
+}*/
 
 #days {
     width: 200px;
@@ -125,7 +126,7 @@ h3 {
     width: 200px;
 }
 
-#display-div {
+/*#display-div {
 	display: block;
 	position: relative;
 	left: 400px;
@@ -134,12 +135,13 @@ h3 {
     margin-right: auto;
     width: 95%;
 }
+*/
 
 #input-div {
 	float: left;
 }
 
-#detail-div {
+/*#detail-div {
 	float: center;
 
-}
+}*/
