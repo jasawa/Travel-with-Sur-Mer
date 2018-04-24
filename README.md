@@ -5,6 +5,7 @@ Travel Agent, Meghan Walker, needed a website for her new business venture, Sur 
 
 
 Built With
+
 •	Weather Underground API
 •	Zomato API
 •	HTML
@@ -16,6 +17,7 @@ Built With
 •	Animate.css
 
 Highlights
+
 •	Created by Daniel Eden, Animate.css is a library of animation effects that added motion and action to the index.html heading and navigation bar.
 
 •	Weather Underground API provided the basis of a 5 day weather forecast. The users can input the city and see what kind of weather they can expect at their destinations.
@@ -23,6 +25,7 @@ Highlights
 •	Zomato API provided an image, rating and address for trending restaurants in selected cities. The selected cities can be updated biweekly which will enable Meghan the opportunity to send out emails to her mailing list to announce new trending restaurants.
 
 Built by
+
 •	Richard Kim
 •	Shri Narayanan
 •	Sam Torosyan
