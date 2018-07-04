@@ -36,7 +36,7 @@ Built by
 •	Sam Torosyan
 •	Jane Asawa
 
-
+Live link for application: https://jasawa.github.io/Travel-with-Sur-Mer/
 
 
 
