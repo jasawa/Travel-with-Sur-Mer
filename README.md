@@ -16,7 +16,6 @@ Built With
 •	Google Fonts
 •	Animate.css
 
-<a href="https://imgflip.com/gif/2devhn"><img src="https://i.imgflip.com/2devhn.gif" title="made at imgflip.com"/></a>
 
 Highlights
 
