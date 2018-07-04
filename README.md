@@ -18,11 +18,6 @@ Built With
 
 
 
-
-<a href="https://imgflip.com/gif/2dew32"><img src="https://i.imgflip.com/2dew32.gif" title="made at imgflip.com"/></a>
-
-
-
 Highlights
 
 •	Created by Daniel Eden, Animate.css is a library of animation effects that added motion and action to the index.html heading and navigation bar.
