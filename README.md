@@ -7,7 +7,6 @@ Website for Sur Mer Travel
 
 
 
-
 Travel Agent, Meghan Walker, needed a website for her new business venture, Sur Mer Travel. Based in Santa Monica, CA, Sur Mer Travel books hotel, transportation, tours and cruises. Most importantly, Meghan gives her clients the support and personal attention that you can't get anywhere else. 
 
 
