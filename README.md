@@ -2,7 +2,6 @@
 Website for Sur Mer Travel
 
 
-<a href="https://imgflip.com/gif/2devm1"><img src="https://i.imgflip.com/2devm1.gif" title="made at imgflip.com"/></a>
 
 
 
