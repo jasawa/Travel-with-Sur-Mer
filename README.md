@@ -39,7 +39,6 @@ Built by
 
 
 
-<a href="https://imgflip.com/gif/2dew32"><img src="https://i.imgflip.com/2dew32.gif" title="made at imgflip.com"/></a>
 
 
 
